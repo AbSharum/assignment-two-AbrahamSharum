@@ -8,46 +8,225 @@
 
 </html>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme= "dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="./browser.html">Browser</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="./dns.html">Domain Name System</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./history.html">History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./server.html">Web Server</a>
-          </li>
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme= "dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./browser.html">Browser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./dns.html">Domain Name System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./server.html">Web Server</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./url.html">URL Parsing</a>
+            </li>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+</div>
 
-<object type = "text/html" data = "../resources/dns-resolution.txt" id="server">
+  <div id="container">
     <style>
-      @media screen{
-        #server{
-          background-color: skyblue;
-          width: 100vw;
-          height: 100vh;
-          border: groove black;
-        }
+      #container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      #container > div {
+        width: 20%;
+        height: 500px;
+        background-color: gray;
+        font-size: x-small;
+        color: wheat;
+        font-family: 'Outline Pixel7 Solid', sans-serif;
+        border-radius: 0%;
+      }
+      #container > div > div {
+        height: 50px;
+      }
+      #container > div > div > a {
+        color: gray;
+        background-color: wheat;
+        border-width: 2px;
+        border-color: black;
+        border-style: ridge;
+        position: absolute;
+        bottom: 8%;
+      }
+       #pageHeaders{
+        width: 100%;
+        height: 300px;
+        border-radius: 0%;
       }
     </style>
-</object>
 
 
+    <div class="card">
+      </style>
+      <img src="../resources/home.png" class="card-img-top" alt="home-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color:wheat">Home</h5>
+        <p class="card-text" style="color: wheat">Check out our home page that covers the connection between a web page and web server!</p>
+        <a href="../index.html" class="btn btn-primary">Home Page</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../resources/history.png"  alt="history-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color: wheat">Computer and Web History</h5>
+        <p class="card-text" style="color: wheat;">Check out our page that covers the history of the world wide web and the computer hardware it runs on!</p>
+        <a href="history.html" class="btn btn-primary">History Page</a>
+      </div>
+    </div>
+    
+
+    <div class="card">
+      </style>
+      <img src="../resources/browser.png" class="card-img-top" alt="browser-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color:wheat">Browsers</h5>
+        <p class="card-text" style="color: wheat">Check out our page on Web browsers and how they process input requests from users!</p>
+        <a href="browser.html" class="btn btn-primary">Browser Page</a>
+      </div>
+    </div>
+
+    <div class="card">
+        </style>
+        <img src="../resources/server.png" class="card-img-top" alt="server-img" id="pageHeaders">
+        <div class="card-body">
+          <h5 class="card-title" style="color:wheat">Web Servers</h5>
+          <p class="card-text" style="color: wheat">Check out our page on the applications and processing of web servers!</p>
+          <a href="server.html" class="btn btn-primary">Server Page</a>
+        </div>
+      </div>
+    
+    <div class="card">
+      </style>
+      <img src="../resources/url.jpeg" class="card-img-top" alt="url-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color:wheat">Uniform Resource Locator</h5>
+        <p class="card-text" style="color: wheat">Check out our page on URL and its parts that combine to deliver you a website!</p>
+        <a href="url.html" class="btn btn-primary">URL Page</a>
+      </div>
+    </div>
+
+    
+    
+      
+
+
+  </div>
+
+  
+  
+  
+
+
+  <div id="text-contain">
+    <strong>
+      DNS Page
+    </strong>
+      <p id="text">
+        DNS (Domain Name System) resolution is the process of converting a human-readable domain name, like "www.example.com," into an IP (Internet Protocol) address, such as "93.184.216.34." 
+        This translation is necessary because computers communicate over the internet using IP addresses, but humans find it more convenient to use domain names. 
+        
+        Here's a detailed explanation of DNS resolution using an example URL:
+
+        Example URL: https://www.example.com/path/to/resource.html
+
+        1. User Input:
+
+        A user enters the URL https://www.example.com/path/to/resource.html into their web browser's address bar.
+
+        2. URL Parsing (Optional):
+
+        Before DNS resolution, the browser parses the URL to extract the domain name, which is www.example.com in this case.
+
+        3. Root DNS Servers:
+
+        The browser first checks its local cache to see if it has recently resolved this domain name. If not, it proceeds to query the DNS system.
+        The DNS resolution process starts with the root DNS servers. These servers are the highest level of the DNS hierarchy and contain information about the top-level domains (TLDs), like .com, .org, .net, etc.
+
+        3. TLD DNS Server:
+
+        The root DNS servers respond to the browser's query with a referral to the appropriate TLD DNS server for the .com TLD.
+        The browser now contacts the .com TLD DNS server.
+
+        4. Authoritative DNS Server (example.com):
+
+        The .com TLD DNS server responds with a referral to the authoritative DNS server for example.com, which is responsible for storing the IP address associated with www.example.com.
+        The browser now contacts the authoritative DNS server for example.com.
+
+        5. IP Address Resolution:
+
+        The authoritative DNS server for example.com holds the mapping between www.example.com and its IP address, in this case, 93.184.216.34.
+        It responds to the browser's DNS query with the IP address.
+
+        6. DNS Response:
+
+        The browser receives the IP address 93.184.216.34 from the authoritative DNS server for example.com.
+
+        7. Caching (Optional):
+
+        The browser caches this DNS response to speed up future requests to the same domain, reducing the need for repeated DNS resolutions.
+
+        8. Connection Establishment:
+
+        Armed with the IP address, the browser can now initiate a connection to the web server associated with www.example.com, using the HTTP or HTTPS protocol, as indicated by the URL scheme.
+
+        9. HTTP Request:
+
+        The browser constructs an HTTP request based on the original URL and sends it to the web server at 93.184.216.34, requesting the resource specified in the path, such as /path/to/resource.html.
+
+        10. Server Response:
+
+        The web server processes the request, retrieves the requested resource, and sends an HTTP response back to the browser.
+
+        11. Page Rendering (Optional):
+
+        The browser renders the web page using the content received from the web server.
+
+
+        In summary, DNS resolution is a critical step in web communication that allows users to access websites using human-readable domain names. 
+        The DNS system helps translate these names into the corresponding IP addresses, enabling browsers to establish connections with the correct web servers and retrieve the requested content.
+
+        </p>
+    <style>
+      #text-contain{
+        height: max-content; 
+        white-space: break-spaces;
+        background-color: grey;
+      }
+      #text-contain > strong {
+        font-size: x-large;
+        color: wheat;
+        font-family: 'Outline Pixel7 Solid', sans-serif; 
+        text-align: justify;
+      }
+      #text{
+        font-size: smaller;
+        color: wheat;
+        font-family: 'Outline Pixel7 Solid', sans-serif;                                    
+      }
+    </style>
+    </div>
+    
+
+<link href="https://fonts.cdnfonts.com/css/outline-pixel7" rel="stylesheet">                
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
   

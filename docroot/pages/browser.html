@@ -6,48 +6,226 @@
     <title>Web Browser</title>
 </head>
 
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme= "dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="./browser.html">Browser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./dns.html">Domain Name System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./server.html">Web Server</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./url.html">URL Parsing</a>
+            </li>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme= "dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./browser.html">Browser</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./dns.html">Domain Name System</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./history.html">History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./server.html">Web Server</a>
-          </li>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+  
+  <div id="container">
+    <style>
+      #container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+      #container > div {
+        width: 20%;
+        height: 500px;
+        background-color: gray;
+        font-size: x-small;
+        color: wheat;
+        font-family: 'Outline Pixel7 Solid', sans-serif;
+        border-radius: 0%;
+      }
+      #container > div > div {
+        height: 50px;
+      }
+      #container > div > div > a {
+        color: gray;
+        background-color: wheat;
+        border-width: 2px;
+        border-color: black;
+        border-style: ridge;
+        position: absolute;
+        bottom: 8%;
+      }
+       #pageHeaders{
+        width: 100%;
+        height: 300px;
+        border-radius: 0%;
+      }
+    </style>
+
+    <div class="card">
+      </style>
+      <img src="../resources/home.png" class="card-img-top" alt="home-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color:wheat">Home</h5>
+        <p class="card-text" style="color: wheat">Check out our home page that covers the connection between a web page and web server!</p>
+        <a href="../index.html" class="btn btn-primary">Home Page</a>
       </div>
     </div>
-  </nav>
+
+    <div class="card">
+      </style>
+      <img src="../resources/server.png" class="card-img-top" alt="server-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color:wheat">Web Servers</h5>
+        <p class="card-text" style="color: wheat">Check out our page on the applications and processing of web servers!</p>
+        <a href="server.html" class="btn btn-primary">Server Page</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      </style>
+      <img src="../resources/dns.png" class="card-img-top" alt="dns-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color:wheat">Domain Name System</h5>
+        <p class="card-text" style="color: wheat">Check out our page on Domain Name System and the network applications that affilate with it!</p>
+        <a href="dns.html" class="btn btn-primary">DNS Page</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="../resources/history.png"  alt="history-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color: wheat">Computer and Web History</h5>
+        <p class="card-text" style="color: wheat;">Check out our page that covers the history of the world wide web and the computer hardware it runs on!</p>
+        <a href="history.html" class="btn btn-primary">History Page</a>
+      </div>
+    </div>
+    
+    <div class="card">
+      </style>
+      <img src="../resources/url.jpeg" class="card-img-top" alt="url-img" id="pageHeaders">
+      <div class="card-body">
+        <h5 class="card-title" style="color:wheat">Uniform Resource Locator</h5>
+        <p class="card-text" style="color: wheat">Check out our page on URL and its parts that combine to deliver you a website!</p>
+        <a href="url.html" class="btn btn-primary">URL Page</a>
+      </div>
+    </div>
+
+    
+    
+      
+
+
+  </div>
+
   
   
   
-  <object data = "../resources/browser.txt" id="server">
-  
+
+
+  <div id="text-contain">
+    <strong>
+      Browser Page
+      </strong>
+        <p id="text">
+        Modern web browsers like Google Chrome perform several primary functions when handling an HTTP response. 
+        These functions ensure that the web page is displayed correctly and that the user has a seamless browsing experience. Here's a detailed explanation of these functions using Google Chrome as an example:
+
+        1. Receiving and Processing the Response:
+
+        When a web browser, like Google Chrome, sends an HTTP request to a web server, it waits for the server's response.
+        The browser receives the HTTP response from the server, which includes the requested web page's content and associated metadata (HTTP headers).
+
+        2. Status Code Handling:
+
+        Chrome examines the HTTP status code included in the response to determine if the request was successful or encountered an error. Common status codes include:
+        200 OK: Successful request.
+        404 Not Found: Requested resource not found.
+        500 Internal Server Error: Server encountered an error.
+
+        3. Content Parsing:
+
+        Chrome parses the content of the HTTP response based on the content type specified in the response headers (e.g., HTML, CSS, JavaScript, images, etc.).
+        For HTML content, Chrome parses the HTML markup to build the Document Object Model (DOM) tree, which represents the structure and content of the web page.
+
+        4. Rendering the Web Page:
+
+        Chrome's rendering engine, called Blink, takes the DOM tree and renders it into a visual representation on the user's screen.
+        It applies styles (CSS) to elements, calculates layouts, and paints pixels on the screen.
+        JavaScript is executed as needed, and it can modify the DOM or interact with the browser and server via AJAX requests.
+
+        5. Resource Loading:
+
+        While rendering the page, Chrome encounters references to external resources such as stylesheets, images, scripts, and fonts embedded in the HTML.
+        It initiates parallel requests to fetch these resources, which may be hosted on the same or different servers.
+
+        6. Caching and Network Optimization:
+
+        Chrome utilizes various caching mechanisms to store and reuse resources that haven't changed since the last visit to the website.
+        It may also employ techniques like HTTP/2 or HTTP/3 and connection pooling to optimize network requests for performance.
+
+        7. Security Checks:
+
+        Chrome performs several security checks, including validating SSL/TLS certificates for HTTPS connections to ensure secure data transmission.
+        It also checks for cross-site scripting (XSS) vulnerabilities and cross-site request forgery (CSRF) protection.
+
+        8. User Interface Updates:
+
+        The browser updates the user interface to reflect the loading progress of the web page. This includes displaying a loading spinner, 
+        indicating secure connections with HTTPS, and showing any relevant notifications.
+
+        9. User Interaction Handling:
+
+        As the page loads and becomes interactive, Chrome allows users to interact with the web page, including clicking links, submitting forms, and interacting with JavaScript-based features.
+
+        10. Error Handling:
+
+        If any errors occur during the loading or rendering process, Chrome may display error messages or handle the errors gracefully to prevent crashes.
+
+        11.Extensions and Plugins:
+
+        Chrome supports extensions and plugins that can modify or enhance its functionality. These extensions can interact with the HTTP response, change its appearance, or add features to the browser.
+        Accessibility and Compatibility:
+
+        Chrome includes features for accessibility, making web content usable for individuals with disabilities.
+        It also aims to maintain compatibility with web standards and specifications to ensure consistent rendering across different websites.
+
+        Modern web browsers like Google Chrome and Mozilla Firefox perform a series of complex tasks to fetch, process, and display web content efficiently while ensuring security and user experience. 
+        These functions work together to create the seamless browsing experience we enjoy today.
+    </p>
     <style>
-    @media screen{
-      #server{
-        background-color: skyblue;
-        width: 100vw;
-        height: 100vh;
-        border: groove black
+      #text-contain{
+        height: max-content; 
+        white-space: break-spaces;
+        background-color: grey;
       }
-    }
-  </style></object>
+      #text-contain > strong {
+        font-size: x-large;
+        color: wheat;
+        font-family: 'Outline Pixel7 Solid', sans-serif; 
+        text-align: justify;
+      }
+      #text{
+        font-size: smaller;
+        color: wheat;
+        font-family: 'Outline Pixel7 Solid', sans-serif;                                    
+      }
+    </style>
+    </div>
+    
 
+<link href="https://fonts.cdnfonts.com/css/outline-pixel7" rel="stylesheet">                
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 

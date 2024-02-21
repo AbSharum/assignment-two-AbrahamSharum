@@ -7,47 +7,224 @@
 </head>
   
 
-<link href ="/styles/style.css" rel = "stylesheet">
+<div class="sticky-top">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme= "dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="browser.html">Browser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dns.html">Domain Name System</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="server.html">Web Server</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="url.html">URL Parsing</a>
+            </li>
+          </div>
+        </div>
+      </nav>
+  </div>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme= "dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="browser.html">Browser</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="dns.html">Domain Name System</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="history.html">History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="server.html">Web Server</a>
-          </li>
+    <div id="container">
+      <style>
+        #container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+        }
+        #container > div {
+          width: 20%;
+          height: 500px;
+          background-color: gray;
+          font-size: x-small;
+          color: wheat;
+          font-family: 'Outline Pixel7 Solid', sans-serif;
+          border-radius: 0%;
+        }
+        #container > div > div {
+          height: 50px;
+        }
+        #container > div > div > a {
+          color: gray;
+          background-color: wheat;
+          border-width: 2px;
+          border-color: black;
+          border-style: ridge;
+          position: absolute;
+          bottom: 8%;
+        }
+         #pageHeaders{
+          width: 100%;
+          height: 300px;
+          border-radius: 0%;
+        }
+      </style>
+
+      <div class="card">
+        </style>
+        <img src="../resources/home.png" class="card-img-top" alt="home-img" id="pageHeaders">
+        <div class="card-body">
+          <h5 class="card-title" style="color:wheat">Home</h5>
+          <p class="card-text" style="color: wheat">Check out our home page that covers the connection between a web page and web server!</p>
+          <a href="../index.html" class="btn btn-primary">Home Page</a>
         </div>
       </div>
-    </nav>
+
+      <div class="card">
+        </style>
+        <img src="../resources/server.png" class="card-img-top" alt="server-img" id="pageHeaders">
+        <div class="card-body">
+          <h5 class="card-title" style="color:wheat">Web Servers</h5>
+          <p class="card-text" style="color: wheat">Check out our page on the applications and processing of web servers!</p>
+          <a href="server.html" class="btn btn-primary">Server Page</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        </style>
+        <img src="../resources/dns.png" class="card-img-top" alt="dns-img" id="pageHeaders">
+        <div class="card-body">
+          <h5 class="card-title" style="color:wheat">Domain Name System</h5>
+          <p class="card-text" style="color: wheat">Check out our page on Domain Name System and the network applications that affilate with it!</p>
+          <a href="dns.html" class="btn btn-primary">DNS Page</a>
+        </div>
+      </div>
+
+      <div class="card">
+        </style>
+        <img src="../resources/browser.png" class="card-img-top" alt="browser-img" id="pageHeaders">
+        <div class="card-body">
+          <h5 class="card-title" style="color:wheat">Browsers</h5>
+          <p class="card-text" style="color: wheat">Check out our page on Web browsers and how they process input requests from users!</p>
+          <a href="browser.html" class="btn btn-primary">Browser Page</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        </style>
+        <img src="../resources/url.jpeg" class="card-img-top" alt="url-img" id="pageHeaders">
+        <div class="card-body">
+          <h5 class="card-title" style="color:wheat">Uniform Resource Locator</h5>
+          <p class="card-text" style="color: wheat">Check out our page on URL and its parts that combine to deliver you a website!</p>
+          <a href="url.html" class="btn btn-primary">URL Page</a>
+        </div>
+      </div>
+
+      
+      
+        
+
+
+    </div>
+
     
-    <object data = "..//resources/history.txt" id="server">
-  <style>
-    @media screen{
-      #server{
-        background-color: skyblue;
-        width: 100vw;
-        height: 100vh;
-        border: groove black
-      }
-    }
-  </style></object>
+    
+    
 
 
+  <div id="text-contain">
+    <strong>
+      History Page
+    </strong>
+      <p id="text">
+        The history of the World Wide Web (WWW), HTML (Hypertext Markup Language), web browsers, and web servers is a fascinating journey that has transformed the way we access and share information. 
+        Here's a detailed timeline of their development:
+
+        1. Precursors (Pre-1989):
+
+        -Before the WWW, the internet existed primarily as a network for research and communication, with no graphical interfaces or standardized methods for sharing information.
+        -Early text-based protocols like Telnet, FTP (File Transfer Protocol), and Gopher allowed users to access remote resources.
+
+        2. Invention of the WWW (1989):
+
+        -The World Wide Web was invented by Sir Tim Berners-Lee, a British computer scientist, in 1989 while working at CERN (European Organization for Nuclear Research).
+        -Berners-Lee proposed a system of interlinked documents using hypertext, allowing users to navigate through information via hyperlinks.
+
+        3. HTML (Early 1990s):
+
+        -In 1990, Berners-Lee created the first web browser/editor called "WorldWideWeb" (later renamed Nexus).
+        -In 1991, he introduced HTML, a markup language to create and format documents with hyperlinks.
+        -The first HTML specification (HTML 1.0) was published in 1993.
+
+        4. Early Web Browsers (1990s):
+
+        -The first web browser, "WorldWideWeb," was developed by Tim Berners-Lee for the NeXTSTEP operating system in 1990.
+        -In 1993, the "Mosaic" browser, developed by Marc Andreessen and Eric Bina at NCSA, introduced features like inline images.
+        Netscape Navigator, released in 1994, became immensely popular and played a pivotal role in the web's growth.
+        -Microsoft entered the browser market with Internet Explorer in 1995.
+
+        5. Rise of Web Servers (1990s):
+
+        -The first web server, CERN HTTPd, was developed by Tim Berners-Lee in 1990.
+        -Apache HTTP Server, initially released in 1995, became the most widely used open-source web server.
+        -Microsoft's Internet Information Services (IIS) and other web server software also emerged.
+
+        6. Standardization (Mid-1990s):
+
+        -The development of HTML standards was led by the World Wide Web Consortium (W3C), founded by Berners-Lee in 1994.
+        -HTML 2.0 was published as an Internet standard in 1995.
+        -HTML 3.2 (1997) introduced more features for web design, including tables and forms.
+
+        7. Browser Wars (Late 1990s):
+
+        -The late 1990s saw intense competition between Microsoft's Internet Explorer and Netscape Navigator, known as the "Browser Wars."
+        -This competition led to rapid innovations in browser features and performance.
+
+        8. Web 2.0 and Beyond (2000s and 2010s):
+
+        -The 2000s brought the era of Web 2.0, characterized by user-generated content, social media, and interactive web applications.
+        -Web standards continued to evolve with HTML5 (2014), which introduced multimedia support, canvas for graphics, and enhanced interactivity.
+
+        9. Modern Browsers and Mobile Web (2000s-Present):
+
+        -Modern web browsers like Mozilla Firefox, Google Chrome, Safari, and Microsoft Edge have continued to improve performance, security, and web standards support.
+        -Mobile browsing became a significant trend, with smartphones and tablets providing access to the web.
+
+        10. Web Servers and Cloud Computing (2000s-Present):
+        - Web servers have evolved to handle massive traffic and have become a central part of cloud computing infrastructure.
+        - Services like Amazon Web Services (AWS), Google Cloud, and Microsoft Azure offer web hosting and server solutions.
+
+        11. Ongoing Development (2020s-Present):
+        - The web continues to evolve with technologies like WebAssembly, Progressive Web Apps (PWAs), and advancements in security and privacy.
+
+        The history of the WWW, HTML, browsers, and web servers has been marked by rapid innovation, standardization efforts, and the continuous expansion of the internet's capabilities. 
+        Today, the web plays an integral role in nearly every aspect of modern life, from communication and commerce to entertainment and education.
+
+      </p>
+      <style>
+      #text-contain{
+          height: max-content; 
+          white-space: break-spaces;
+          background-color: grey;
+        }
+        #text-contain > strong {
+          font-size: x-large;
+          color: wheat;
+          font-family: 'Outline Pixel7 Solid', sans-serif; 
+          text-align: justify;
+        }
+        #text{
+          font-size: smaller;
+          color: wheat;
+          font-family: 'Outline Pixel7 Solid', sans-serif;                                    
+        }
+      </style>
+      </div>
+      
+
+<link href="https://fonts.cdnfonts.com/css/outline-pixel7" rel="stylesheet">                
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 
