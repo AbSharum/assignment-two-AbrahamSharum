@@ -51,3 +51,30 @@ The content for each of the pages is located in text files within the resources 
 #### Submission:
 Push your Git Repository to submit your assignment.  You can push the repository multiple times.  As a rule, push at the end of your editing sessions.
 
+---
+
+## Implementation Notes
+
+This is a **static, multi-page HTML/CSS website** — plain HTML files styled with [Bootstrap 5.3](https://getbootstrap.com/) (loaded from the jsDelivr CDN, no build tooling, no server-side code, no npm/package files).
+
+**Structure:**
+- `docroot/index.html` — home page with a Bootstrap navbar and a card for each topic page.
+- `docroot/pages/` — one page per topic: `browser.html`, `dns.html`, `history.html`, `server.html`, `url.html`, each reusing the same navbar and card layout.
+- `docroot/resources/` — the images (`*.png`/`*.jpeg`) used on each page plus `.txt` files containing the source content that was written into the pages, and `SiteMap.png` showing the intended site structure.
+
+All pages describe how a browser resolves and loads a page over HTTP (URL parsing, DNS resolution, TCP connection, HTTP request/response, rendering).
+
+### How to run
+
+No build step or server is required — it's static HTML/CSS pulling Bootstrap from a CDN:
+
+1. Open `docroot/index.html` directly in a browser, **or**
+2. Serve the `docroot/` folder with any static file server, e.g.:
+   ```
+   cd docroot
+   python -m http.server 8000
+   ```
+   then visit `http://localhost:8000/`.
+
+An internet connection is needed for the Bootstrap CSS/JS and the `fonts.cdnfonts.com` webfont to load correctly.
+
